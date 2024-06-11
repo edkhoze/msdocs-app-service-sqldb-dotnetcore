@@ -9,7 +9,7 @@ builder.Services.AddDbContext<MyDatabaseContext>(options => options.UseSqlServer
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration["AZURE_REDIS_CONNECTIONSTRING"];
-    options.InstanceName = "SampleInstance";
+    options.InstanceName = "edswebapp-cache";
 });
 
 // Add services to the container.
